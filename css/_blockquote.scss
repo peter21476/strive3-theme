@@ -1,0 +1,41 @@
+.wp-block-quote {
+
+    p {
+
+        font-family: $headings-font;
+        font-size: 28px;
+        line-height: 43px;
+
+        &::before {
+            content: "“";
+            font-size: 60px;
+            line-height: 0;
+            margin-right: 0.2em;
+            vertical-align: -0.4em;
+        }
+
+        &::after {
+            content: "”";
+            font-size: 60px;
+            line-height: 0;
+            margin-left: 0.2em;
+            vertical-align: -0.4em;
+        }
+
+    }
+
+    cite {
+
+        font-family: $main-font;
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 400;
+        margin-top: 20px;
+        font-style: normal;
+
+        &::before {
+            content: "— ";
+        }
+    }
+
+}

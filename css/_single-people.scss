@@ -1,0 +1,97 @@
+.strive3-people {
+
+    &__container {
+
+        margin-top: rem(40);
+        margin-bottom: rem(40);
+
+    }
+
+    &__content {
+
+        max-width: rem(1200);
+        margin: rem(40) 0;
+
+    }
+
+    &__image--inner {
+
+        height: rem(500);
+        position: absolute;
+
+        @include breakpoint(medium) {
+
+            position: relative;
+            height: auto;
+
+        }
+
+        img {
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+    }
+
+    &__social {
+
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @include breakpoint(medium) {
+
+            position: relative;
+            margin-top: rem(20);
+            margin-bottom: rem(20);
+
+        }
+
+        a {
+
+            font-size: rem(30);
+            margin-right: rem(20);
+            color: $blue-l;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+
+                color: $blue-d;
+
+            }
+
+        }
+
+    }
+
+    &__name--inner {
+
+        position: relative;
+
+        h1 {
+
+            color: $blue-d;
+            max-width: rem(450);
+
+            @include breakpoint(medium) {
+
+                max-width: 100%;
+
+            }
+
+        }
+
+        p {
+
+            font-size: rem(30);
+            font-weight: 700;
+            color: $blue;
+
+        } 
+
+    }
+
+}

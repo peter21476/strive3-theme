@@ -1,0 +1,37 @@
+.strive3-sample {
+
+    &__container {
+
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+
+    }
+
+    &__content {
+
+        max-width: 900px;
+        margin: 0 auto;
+
+    }
+
+    &__image {
+
+        max-width: 900px;
+        margin: 40px auto;
+
+        img {
+
+            width: 100%;
+            height: auto;
+
+        }
+
+    }
+
+    &__title {
+
+        text-align: center;
+
+    }
+
+}

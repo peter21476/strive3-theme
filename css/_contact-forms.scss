@@ -1,0 +1,39 @@
+.s3-contact-form {
+
+    &__home-page {
+
+        label {
+
+            background-color: $white;
+            padding: 15px 15px;
+            border-radius: 50px;
+            font-family: $main-font;
+            width: 100%;
+            max-width: 500px;
+
+            input {
+
+                border: 0;
+                width: 100%;
+
+                &:focus {
+
+                    outline: 0;
+
+                }
+
+            }
+
+        }
+
+        input[type="submit"] {
+
+            background-color: transparent;
+            color: $white;
+            border: 1px solid $white;
+
+        }
+
+    }
+
+}

@@ -1,0 +1,19 @@
+#breadcrumbs {
+
+    margin: rem(20) 0;
+    font-size: rem(16);
+
+    a {
+
+        color: $blue;
+        text-decoration: none;
+
+    }
+
+    span {
+
+        margin: 0 rem(10);
+
+    }
+
+}

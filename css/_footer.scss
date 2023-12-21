@@ -1,0 +1,152 @@
+footer {
+
+    background: $blue;
+
+    .s3-footer-logo {
+
+        max-width: rem(400);
+        height: auto;
+        display: flex;
+        margin: rem(50) auto;
+        width: 100%;
+
+    }
+
+    .footer-menu {
+        max-width: 600px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: auto;
+        margin-top: 0px;
+
+        li {
+
+            a {
+
+                color: $white;
+                font-family: $main-font;
+                font-size: 16px;
+                text-decoration: none;
+
+                &:hover {
+
+                    text-decoration: underline;
+
+                }
+            }
+
+        }
+
+
+    }
+
+    .s3-footer-logos {
+
+        max-width: 600px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 50px;
+        gap: 40px;
+        align-items: center;
+
+        img {
+                width:100%;
+                max-width: 400px;
+                height: auto;
+        }
+
+        @include breakpoint(medium) {
+
+            flex-direction: column;
+            align-items: center;
+
+            img {
+
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+
+            }
+
+        }
+
+    }
+
+    .s3-social-media {
+
+        max-width: 600px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 50px;
+        gap: 40px;
+        align-items: center;
+
+        @include breakpoint(medium) {
+
+            flex-wrap: wrap;
+
+        }
+
+        a {
+
+            color: $white;
+            font-size: 16px;
+            text-decoration: none;
+            border: 1px solid $white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            padding: 20px;
+
+            &:hover {
+
+                background: $white;
+                color: $blue-l;
+
+            }
+        }
+
+    }
+
+    .s3-address {
+
+        max-width: 600px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: $white;
+        font-family: $main-font;
+        font-size: 16px;
+        text-align: center;
+
+        span:not(:last-child) {
+
+            margin-right: 5px;
+
+            &:after {
+
+
+                content: "\2022";
+                margin-left: 5px;
+
+
+            }
+
+        }
+
+        a {
+
+            color: $white;
+        }
+
+    }
+
+}
